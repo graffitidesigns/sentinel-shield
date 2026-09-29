@@ -1,0 +1,32 @@
+:root {
+    --color-primary: #000066;
+    --color-secondary: #ff9900;
+    --color-background: #003366;
+    --color-surface: #555;
+    --color-text: #fff;
+    --color-text-muted: #999;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: var(--color-text);
+    background-color: var(--color-background);
+    line-height: 1.6;
+}
+
+.container{
+    margin: 0 auto;
+    padding: 0 20px;
+    width: 100%;
+    max-width: 1200px;  
+}
