@@ -43,6 +43,14 @@ header .container{
     justify-content: space-between;
 }
 
+header .container .menu-toggle{
+    display: none;
+    background-color: transparent;
+    color: var(--color-text);
+    font-size: 1.5rem;
+    border: none;
+}
+
 .main-nav ul{
     display: flex;
     gap: 1.5rem;
@@ -266,4 +274,58 @@ footer .container{
     order: 3;
     width: 100%;              
     text-align: center; 
+}
+
+@media (max-width: 768px) {
+
+    .card-container{
+        grid-template-columns: 1fr;
+        padding: 1rem;
+    }
+
+    .hero {
+    padding: 3rem 0;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero-btn{
+        text-decoration: none;
+        padding: 0.5rem 1rem;
+        border-radius: 10px;
+    }
+
+    #security h2 {
+        font-size: 1.5rem;
+    }
+
+    #cta h2 {
+        font-size: 1.5rem;
+    }
+
+    header .container .menu-toggle{
+        display: flex;
+    }
+
+    .main-nav ul{
+        display: none;
+    }
+
+    .main-nav.open ul{
+        display: flex;
+
+        flex-direction: column;
+        padding-top: 1rem;
+        padding-bottom: 0.5rem;
+    }
+
+    header .container {
+        flex-wrap: wrap;
+    }
+
+    .main-nav {
+        width: 100%;
+    }
 }
