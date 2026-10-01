@@ -357,10 +357,99 @@ footer .container{
     color:var(--color-secondary);
 }
 
-.main-nav ul li a .active:hover{
+.main-nav ul li a.active:hover{
     color:var(--color-surface);
     text-decoration: underline;
 }
+
+.about-hero{
+    background-color: var(--color-background);
+    padding: 4rem 0;
+    text-align: center;
+}
+
+.about-hero h1{
+    padding-top: 1.5rem;
+    font-size: 2.75rem;
+    text-align: center;
+}
+
+.about-hero p{
+    width:100%;
+    
+    padding-top: 2rem;
+    font-size: 1rem;
+    text-align: center;
+}
+
+#mission{
+    background-color: var(--color-surface);
+    color:var(--color-text);
+    padding: 4rem 0;
+    text-align: center;
+}
+
+#mission h2{
+    padding-bottom: 2rem;
+}
+
+#mission .container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5rem;
+    align-items: center;
+}
+
+
+.mission-visual img{
+    max-width: 200px;
+    width: 100%;
+}
+
+.mission-visual {
+    justify-self: center;
+}
+
+#values{
+    background-color: var(--color-secondary);
+    color:var(--color-background);
+    padding: 4rem 0;
+}
+
+#values h2{
+    text-align: center;
+    padding-bottom: 1.5rem;
+}
+
+#values h3{
+    text-align: center;
+    padding-bottom: 1rem;
+}
+
+.values-card{
+    background-color: transparent;
+    border: none;
+    padding: 0 2rem;
+}
+
+.values-box{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 2.5rem;
+}
+
+#why-us{
+    background-color: var(--color-text-muted);
+    color: var(--color-background); 
+    padding: 4rem 2rem ;
+}
+
+#why-us h2{
+    text-align: center;
+    padding-bottom: 1.5rem;
+}
+
+
 
 @media (max-width: 768px) {
 
@@ -428,5 +517,50 @@ footer .container{
 
     .services-hero h1 {
         font-size: 2rem;
+    }
+
+    .about-hero {
+    padding: 3rem 0;
+    }
+
+    .about-hero h1 {
+        font-size: 2rem;
+    }
+
+    #values{
+        background-color: var(--color-secondary);
+        color:var(--color-background);
+        padding: 3rem 0;
+    }
+
+    .values-box{
+        grid-template-columns: 1fr;
+        padding: 1rem;
+    }
+
+    .values-card{
+        padding:1.5rem 0;
+    }
+
+    #mission{
+        background-color: var(--color-surface);
+        color:var(--color-text);
+        padding: 3rem 0;
+        text-align: center;
+    }
+
+    #mission .container{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    #why-us{
+        text-align: center;
+        padding: 1rem;
+    }
+
+    .mission-visual {
+        padding-top: 2rem;
     }
 }
