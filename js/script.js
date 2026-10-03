@@ -6,16 +6,23 @@ const sndForm = document.querySelector(".contact-form-box")
 
 const formStatus = document.querySelector(".form-status");
 
+
 menuButton.addEventListener("click", function () {
     const isOpen = mainNav.classList.toggle("open");
 
     if(isOpen){
         menuButton.textContent = "×";
+
+        menuButton.setAttribute("aria-label","Close navigation menu");
+
     }else{
         menuButton.textContent = "☰";
+
+        menuButton.setAttribute("aria-label","Open navigation menu");
+
     }
 
-    menuButton.setAttribute("aria-expanded", isOpen);
+        menuButton.setAttribute("aria-expanded", isOpen);
 });
 
 if(sndForm){
